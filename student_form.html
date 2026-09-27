@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+
+            // Name validation
+            if (name == "") {
+                alert("Name cannot be empty.");
+                return false;
+            }
+
+            // Email validation
+            if (email.indexOf("@") == -1) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // Phone number validation
+            if (isNaN(phone) || phone.length != 10) {
+                alert("Phone number must contain exactly 10 digits.");
+                return false;
+            }
+
+            alert("Registration Successful!");
+            return true;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <label>Name:</label>
+        <br>
+
+        <input type="text" id="name">
+        <br><br>
+
+        <label>Email:</label>
+        <br>
+
+        <input type="text" id="email">
+        <br><br>
+
+        <label>Phone Number:</label>
+        <br>
+
+        <input type="text" id="phone">
+        <br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+
+</html>

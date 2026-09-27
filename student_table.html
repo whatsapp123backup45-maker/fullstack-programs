@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Record Table</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f7ff;
+            margin: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #003366;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px lightgray;
+        }
+
+        caption {
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            color: darkblue;
+        }
+
+        th {
+            background-color: #1e90ff;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #d6ecff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Student Semester Examination Record</h2>
+
+    <table>
+
+        <caption>
+            Student Academic Performance - Semester Wise
+        </caption>
+
+        <tr>
+            <th rowspan="2">Semester</th>
+            <th rowspan="2">Subject Name</th>
+            <th colspan="3">Marks</th>
+            <th rowspan="2">Grade</th>
+        </tr>
+
+        <tr>
+            <th>Internal</th>
+            <th>External</th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <td rowspan="3"><b>Semester I</b></td>
+            <td>Mathematics</td>
+            <td>25</td>
+            <td>65</td>
+            <td>90</td>
+            <td>A+</td>
+        </tr>
+
+        <tr>
+            <td>Computer Fundamentals</td>
+            <td>24</td>
+            <td>62</td>
+            <td>86</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>Programming in C</td>
+            <td>23</td>
+            <td>60</td>
+            <td>83</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2"><b>Semester II</b></td>
+            <td>Digital Electronics</td>
+            <td>22</td>
+            <td>58</td>
+            <td>80</td>
+            <td>B+</td>
+        </tr>
+
+        <tr>
+            <td>Web Technology</td>
+            <td>25</td>
+            <td>68</td>
+            <td>93</td>
+            <td>A+</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

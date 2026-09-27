@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Manipulation Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            transition: background-color 0.5s;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #content {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="heading">Welcome to DOM Manipulation</h1>
+
+    <button onclick="changeHeading()">
+        Change Heading
+    </button>
+
+    <button onclick="changeBackground()">
+        Change Background
+    </button>
+
+    <button onclick="addParagraph()">
+        Add Paragraph
+    </button>
+
+    <div id="content"></div>
+
+    <script>
+        // Function to change heading text
+        function changeHeading() {
+            document.getElementById("heading").innerHTML =
+                "Heading Changed Successfully!";
+        }
+
+        // Function to change background color
+        function changeBackground() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+
+        // Function to add a new paragraph
+        function addParagraph() {
+            let para = document.createElement("p");
+
+            para.innerHTML =
+                "This paragraph was added dynamically using JavaScript DOM.";
+
+            document.getElementById("content").appendChild(para);
+        }
+    </script>
+
+</body>
+
+</html>
